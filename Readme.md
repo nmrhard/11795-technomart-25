@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [nmrhard](https://up.htmlacademy.ru/htmlcss/25/user/11795).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Удовенко](https://up.htmlacademy.ru/htmlcss/25/user/7570).
 
 ---
 
