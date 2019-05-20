@@ -43,7 +43,7 @@
 		</div>
 	</header>
 	<main>
-		<ul class="breadcrumbs" aria-label="Breadcrumb">
+		<ul class="breadcrumbs" aria-label="breadcrumb">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
 			<li><a href="#">Инструмент</a></li>
@@ -58,8 +58,14 @@
 				<fieldset>
 					<legend>Цена:</legend>
 					<input type="range" min="0" max="50000" step="100" multiple>
-					<input class="filter-input filter-input-text" type="text" name="min-cost" value="0" id="filter-min-cost">
-					<input class="filter-input filter-input-text" type="text" name="max-cost" value="30000" id="filter-max-cost">
+					<ul>
+						<li class="filter-option">
+							<input class="filter-input filter-input-text" type="text" name="min-cost" value="0" id="filter-min-cost">
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-text" type="text" name="max-cost" value="30000" id="filter-max-cost">
+						</li>
+					</ul>
 				</fieldset>
 				<fieldset>
 					<legend>Производители:</legend>
@@ -118,161 +124,143 @@
 			<h2 class="visually-hidden">Список перфораторов</h2>
 			<ul class="list">
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 3000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000.">
+						</p>
+					</a>
 					<p class="price">
-						<span class="old-price">22500 Р.</span>
-						<b>15500 Р.</b>
+						<span class="old-price" aria-label="Старая цена 22500 Р.">22500 Р.</span>
+						<b aria-label="Новая цена 15500 Р.">15500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>							
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 6000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000.">
+						</p>
+					</a>
 					<p class="price">
-						<span class="old-price">30500 Р.</span>
-						<b>25500 Р.</b>
+						<span class="old-price" aria-label="Старая цена 30500 Р.">30500 Р.</span>
+						<b aria-label="Новая цена 25500 Р.">25500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>							
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 2000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000.">
+						</p>
+					</a>
 					<p class="price">
 						<b>12500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 3000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000.">
+						</p>
+					</a>
 					<p class="price">
-						<span class="old-price">22500 Р.</span>
-						<b>15500 Р.</b>
+						<span class="old-price" aria-label="Старая цена 22500 Р.">22500 Р.</span>
+						<b aria-label="Новая цена 15500 Р.">15500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>							
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 6000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000.">
+						</p>
+					</a>
 					<p class="price">
-						<span class="old-price">30500 Р.</span>
-						<b>25500 Р.</b>
+						<span class="old-price" aria-label="Старая цена 30500 Р.">30500 Р.</span>
+						<b aria-label="Новая цена 25500 Р.">25500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>							
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 2000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000.">
+						</p>
+					</a>
 					<p class="price">
 						<b>12500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 3000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000.">
+						</p>
+					</a>
 					<p class="price">
-						<span class="old-price">22500 Р.</span>
-						<b>15500 Р.</b>
+						<span class="old-price" aria-label="Старая цена 22500 Р.">22500 Р.</span>
+						<b aria-label="Новая цена 15500 Р.">15500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>							
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 6000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000.">
+						</p>
+					</a>
 					<p class="price">
-						<span class="old-price">30500 Р.</span>
-						<b>25500 Р.</b>
+						<span class="old-price" aria-label="Старая цена 30500 Р.">30500 Р.</span>
+						<b aria-label="Новая цена 25500 Р.">25500 Р.</b>
 					</p>
 				</li>
 				<li class="item">
-					<h3>
-						<a href="#">
+					<a href="#">
+						<h3>							
 							<span class="category-title">Перфоратор BOSCH</span>
 							<span class="goods-title">BFG 2000</span>
-						</a>
-					</h3>
-					<p class="goods-image">
-						<a href="#">
-							<img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-						</a>
-					</p>
+						</h3>
+						<p class="goods-image">
+							<img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000.">
+						</p>
+					</a>
 					<p class="price">
 						<b>12500 Р.</b>
 					</p>
 				</li>
 			</ul>
-			<ul class="pagination-list">
-				<li class="pagination-item pagination-item-current"><a>1</a></li>
-				<li class="pagination-item"><a href="#">2</a></li>
-				<li class="pagination-item"><a href="#">3</a></li>
-				<li class="pagination-item"><a href="#">Следующая</a></li>
+			<ul class="pagination-list" aria-label="pagination">
+				<li class="pagination-item pagination-item-current" aria-current="page"><a><span class="visually-hidden">Текущая страница</span>1</a></li>
+				<li class="pagination-item"><a href="#"><span class="visually-hidden">Страница</span>2</a></li>
+				<li class="pagination-item"><a href="#"><span class="visually-hidden">Страница</span>3</a></li>
+				<li class="pagination-item"><a href="#">Следующая<span class="visually-hidden">Страница</span></a></li>
 			</ul>
 		</section>
 		<section class="about-tool">
@@ -286,7 +274,7 @@
 	<footer class="main-footer">
 		<div class="footer-menu">
 			<div class="top-menu">
-				<a class=logo><img src="img/logo.png" width="109" height="19" alt="Техномарт."></a>
+				<a href="index.html" class=logo><img src="img/logo.png" width="109" height="19" alt="Техномарт."></a>
 				<ul class="navigation">
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Новости</a></li>
