@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header class="main-header">
-		<div class="top-header">>
+		<div class="top-header">
 			<a href="index.html" class="logo"><img src="img/logo.png" width="109" height="19" alt="Техномарт."></a>
 			<p class="search"><label for="site-serch">Поиск:</label><input type="search" id="site-serch"></p>
 			<p class="bookmarks"><a href="#">Закладки: 0 <span class="visually-hidden">закладок</span></a></p>
@@ -31,7 +31,7 @@
 			</ul>
 			<nav class="main-navigation">
 				<ul>
-					<li><a>Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Компания</a></li>
 					<li><a>Каталог</a></li>
 					<li><a href="#">Новости</a></li>
@@ -43,16 +43,64 @@
 		</div>
 	</header>
 	<main>
-		<ul class="breadcrumbs">
+		<ul class="breadcrumbs" aria-label="Breadcrumb">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
 			<li><a href="#">Инструмент</a></li>
-			<li class="breadcrumbs-current">Перфораторы</li>
+			<li class="breadcrumbs-current" aria-current="page">
+				<span class="visually-hidden">Текущий пункт:</span>Перфораторы
+			</li>
 		</ul>
 		<h1 class="page-title">Перфораторы</h1>
 		<section class="filters">
 			<h2 class="title">Фильтр:</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Цена:</legend>
+					<input type="range" min="0" max="50000" step="100" multiple>
+					<input class="filter-input filter-input-text" type="text" name="min-cost" value="0" id="filter-min-cost">
+					<input class="filter-input filter-input-text" type="text" name="max-cost" value="30000" id="filter-max-cost">
+				</fieldset>
+				<fieldset>
+					<legend>Производители:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+							<label for="filter-bosch">Bosch</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+							<label for="filter-interskol">Интерскол</label>
+						</li class="filter-option">
+						<li class="filter-option">
+							<input class="ilter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+							<label for="filter-makita">Makita</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+							<label for="filter-dewalt">Dewalt</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+							<label for="filter-hitachi">Hitachi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Питание:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="filter-input filter-input-radio" type="radio" name="power" value="battery" id="filter-battery" checked>
+							<label for="filter-battery">Аккумуляторные</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-radio" type="radio" name="power" value="network" id="filter-network">
+							<label for="filter-network">Сетевые</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="filter-button button">Показать</button>
+			</form>
 		</section>
 		<section class="sort">
 			<h2 class="title">Сортировка:</h2>
