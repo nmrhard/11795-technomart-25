@@ -3,16 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Техномарт</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic">
+	<link rel="steelsheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="top-header">
-			<a href="index.html" class="logo"><img src="img/logo.png" width="109" height="19" alt="Техномарт."></a>
-			<p class="search"><label for="site-serch">Поиск:</label><input type="search" id="site-serch"></p>
-			<p class="bookmarks"><a href="#">Закладки: 0 <span class="visually-hidden">закладок</span></a></p>
-			<p class="cart"><a href="#" class="cart">Корзина: 10 <span class="visually-hidden">товаров в корзине</span></a></p>
-			<p class="checkout"><a href="#" class="checkout-button">Оформить заказ</a></p>
+			<a class="logo">
+				<img src="img/logo.png" width="109" height="19" alt="Техномарт.">
+			</a>
+			<p class="search">
+				<label for="site-serch">Поиск:</label>
+				<input type="search" id="site-serch">
+			</p>
+			<p class="bookmarks">
+				<a href="#">Закладки: 0 
+					<span class="visually-hidden">закладок</span>
+				</a>
+			</p>
+			<p class="cart">
+				<a href="#" class="cart">Корзина: 0 
+					<span class="visually-hidden">товаров в корзине</span>
+				</a>
+			</p>
+			<p class="checkout">
+				<a href="#" class="checkout-button">Оформить заказ</a>
+			</p>
 		</div>
 		<div class="info">
 			<h1>
@@ -309,7 +326,7 @@
 			<li><a href="#" class="checkout">Оформить заказ</a></li>
 			<li><a href="#" class="cancel">Продолжить покупки</a></li>
 		</ul>
-		<button type="button" class="modal-close" aria-label="Закрыть окно">x</button>
+		<button class="modal-close" type="button" aria-label="Закрыть окно">x</button>
 	</section>
 </body>
 </html>
