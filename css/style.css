@@ -212,9 +212,6 @@ a.button:active {
 	background-color: #ba2732;
 }
 
-
-
-
 .services {
 	background-color: #f4f7f9;
 }
@@ -242,7 +239,7 @@ a.button:active {
 }
 
 .navigation a {
-	color: #ffffff;
+	color: #f1f5f7;
 }
 
 .navigation a:hover {
@@ -259,6 +256,9 @@ a.button:active {
 	color: #ffffff;
 }
 
+.bottom-menu address {
+	color: #f1f5f7;
+}
 .bottom-menu a {
 	color: #ffd180;
 }
