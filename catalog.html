@@ -3,32 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Техномарт</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic">
-	<link rel="steelsheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="top-header">
-			<a class="logo">
-				<img src="img/logo.png" width="109" height="19" alt="Техномарт.">
-			</a>
-			<p class="search">
-				<label for="site-serch">Поиск:</label>
-				<input type="search" id="site-serch">
+			<p>
+				<a  href="index.html" class="logo">
+					<img src="img/logo.png" width="109" height="19" alt="Техномарт.">
+				</a>
 			</p>
-			<p class="bookmarks">
-				<a href="#">Закладки: 0 
+			<p class="search">
+				<input type="search" id="site-serch" placeholder="Поиск:" aria-label="Поиск по сайту">
+			</p>
+			<p>
+				<a class="bookmarks" href="#">Закладки: 0 
 					<span class="visually-hidden">закладок</span>
 				</a>
 			</p>
-			<p class="cart">
-				<a href="#" class="cart">Корзина: 0 
+			<p>
+				<a class="cart cart-with-items" href="#">Корзина: 10 
 					<span class="visually-hidden">товаров в корзине</span>
 				</a>
 			</p>
-			<p class="checkout">
-				<a href="#" class="checkout-button">Оформить заказ</a>
+			<p>
+				<a class="checkout" href="#">Оформить заказ</a>
 			</p>
 		</div>
 		<div class="info">
@@ -38,13 +39,15 @@
 				и инструментов для ремонта
 			</h1>
 			<div class="contacts">
-				<p class="telephone"><a href="tel:+1+78125550555">+7 (812) 555-05-55</a></p>
-				<span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+				<p class="telephone">
+					<a href="tel:+1+78125550555" aria-label="Телефон компании">+7 (812) 555-05-55</a>
+				</p>
+				<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 			</div>
 			<ul class="user-menu">
 				<li class="user-name"><a href="#">Равшан Джамшутович</a><a href="user-log-out" aria-label="Выход из профиля"></a></li>
-				<li class="orders"><a href="#">Мои заказы</a></li>
-				<li class="account"><a href="#">Личный кабинет</a></li>
+				<li class="user-info"><a href="#">Мои заказы</a></li>
+				<li class="user-info"><a href="#">Личный кабинет</a></li>
 			</ul>
 			<nav class="main-navigation">
 				<ul>
@@ -70,11 +73,11 @@
 		</ul>
 		<h1 class="page-title">Перфораторы</h1>
 		<section class="filters">
-			<h2 class="title">Фильтр:</h2>
+			<h2 class="filter-title">Фильтр:</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Цена:</legend>
-					<input type="range" min="0" max="50000" step="100" multiple>
+					<input type="range" min="0" max="50000" step="100">
 					<ul>
 						<li class="filter-option">
 							<input class="filter-input filter-input-text" type="text" name="min-cost" value="0" id="filter-min-cost">
@@ -94,7 +97,7 @@
 						<li class="filter-option">
 							<input class="filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
 							<label for="filter-interskol">Интерскол</label>
-						</li class="filter-option">
+						</li>
 						<li class="filter-option">
 							<input class="ilter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
 							<label for="filter-makita">Makita</label>
@@ -122,11 +125,11 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button type="submit" class="filter-button button">Показать</button>
+				<button type="submit" class="filter-button">Показать</button>
 			</form>
 		</section>
 		<section class="sort">
-			<h2 class="title">Сортировка:</h2>
+			<h2 class="filter-title">Сортировка:</h2>
 			<ul class="list">
 				<li class="current-sort"><a href="#">По цене</a></li>
 				<li><a href="#">По типу</a></li>
@@ -273,20 +276,24 @@
 	<footer class="main-footer">
 		<div class="footer-menu">
 			<div class="top-menu">
-				<a href="index.html" class=logo><img src="img/logo.png" width="109" height="19" alt="Техномарт."></a>
+				<p>
+					<a href="index.html" class=logo>
+						<img src="img/logo.png" width="109" height="19" alt="Техномарт.">
+					</a>
+				</p>
 				<ul class="navigation">
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="#">Каталог</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="bottom-menu">
-				<p>
+				<address>
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>	
 					+7 (812) 555-05-55
-				</p>
+				</address>
 				<ul class="navigation">
 					<li><a href="#">Материалы</a></li>
 					<li><a href="#">Техника</a></li>
@@ -302,18 +309,18 @@
 			</p>
 			<div class="footer-social">
 				<ul>
-					<li><a class="social-button" href="#" aria-label="Страница техномарта в Вконтакте"></a></li>
-					<li><a class="social-button" href="#" aria-label="Страница техномарта на Фейсбук"></a></li>
-					<li><a class="social-button" href="#" aria-label="Страница техномарта в Инстаграм"></a></li>
+					<li><a class="social-button" href="#" aria-label="Страница техномарта в Вконтакте">Вконтакте</a></li>
+					<li><a class="social-button" href="#" aria-label="Страница техномарта на Фейсбук">Фейсбук</a></li>
+					<li><a class="social-button" href="#" aria-label="Страница техномарта в Инстаграм">Инстаграм</a></li>
 				</ul>
 			</div>
-			<ul class="contacts">
+			<ul class="feedback">
 				<li>
-					<b>Обратная связь:</b> 
+					<b>Обратная связь:</b><br>
 					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 				</li>
 				<li>
-					<b>Разработано —</b> 
+					<b>Разработано —</b><br>
 					<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 				</li>
 			</ul>
