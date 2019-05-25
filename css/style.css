@@ -102,16 +102,16 @@ a {
 }
 
 .top-header .bookmarks {
-	width: 140px;
+	width: 150px;
 	text-align: center;
 }
 
 .top-header .cart {
-	width: 160px;
+	width: 150px;
 	text-align: center;
 }
 
-.cart-with-items {
+.cart.cart-with-items {
 	background-color: #ee3643;
 }
 
@@ -135,7 +135,11 @@ a {
 }
 
 .info h1 {
-	width: 310px;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+	padding-left: 50px;
 	font-size: 16px;
 	font-weight: 400;
 	font-style: italic;
@@ -144,7 +148,8 @@ a {
 }
 
 .info .contacts {
-	width: 320px;
+	width: 300px;
+	margin-right: 20px;
 	text-align: center;
 }
 
@@ -160,10 +165,12 @@ a {
 	font-style: normal;
 }
 
-.user-navigation {
-	width: 310px;
+.user-navigation,
+.user-menu {
+	width: 300px;
 	margin: 0;
 	padding: 0;
+	margin-left: auto;
 	list-style-type: none;
 }
 
@@ -526,17 +533,4 @@ input[type='checkbox']:disabled + label {
 	text-decoration: none;
 	background-color: #ee3643;
 }
-
-/*
-body > * {
-	background: rgba(240,240,40, 0.4);
-}
-
-body > * > * {
-	background: rgba(255,40,40, 0.4);
-}
-
-body > * > * > * {
-	background: rgba(255,40,180, 0.4);
-	} */
 
