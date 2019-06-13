@@ -17,7 +17,7 @@
 					</a>
 					<div class="search-wrapper">						
 						<input type="search" id="site-serch" placeholder="Поиск:" aria-label="Поиск по сайту">						
-						<svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+						<svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve" aria-hidden="true">
 							<g id="search-1">
 							</g>
 							<g id="search-2">
@@ -51,7 +51,7 @@
 				<ul class="user-navigation">
 					<li class="item">
 						<a class="login link" href="#">
-							<svg class="login-icon" version="1.1" id="login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+							<svg class="login-icon" version="1.1" id="login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve" aria-hidden="true">
 								<g>
 									<polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
 								</g>
@@ -98,28 +98,28 @@
 				</div>
 			</div>
 			<div class="offers-second-row">
-				<ul class="slider">
-					<li class="item item-1" id="slide-1">						
-						<div class="slider-desription">
-							<h3 class="slider-title">Дрели</h3>
-							<span>Соседям на радость!</span>
-						</div>
-						<a href="catalog.html" class="slider-button button">Открыть каталог</a>
-					</li>
-					<li class="item item-2" id="slide-2">
+				<div class="slider">
+					<div class="item item-1" id="slide-1">
 						<div class="slider-desription">
 							<h3 class="slider-title">Перфораторы</h3>
 							<span>Настоящие мужские игрушки</span>
 						</div>
 						<a href="catalog.html" class="slider-button button">Открыть каталог</a>
-					</li>
+					</div>
+					<div class="item item-2" id="slide-2">						
+						<div class="slider-desription">
+							<h3 class="slider-title">Дрели</h3>
+							<span>Соседям на радость!</span>
+						</div>
+						<a href="catalog.html" class="slider-button button">Открыть каталог</a>
+					</div>
 					<button class="slider-switcher prev" type="button" aria-label="Предыдущий слайд"></button>
 					<button class="slider-switcher next" type="button" aria-label="Следующий слайд"></button>
 					<div class="radio-swithes">
-						<label class="radio-switcher-item" for="radio-switcher poducts-1" aria-label="Первый слайд"></label>
-						<label class="radio-switcher-item active" for="poducts-2" aria-label="Второй слайд"></label>
+						<label class="radio-switcher-item" aria-label="Первый слайд"></label>
+						<label class="radio-switcher-item active" aria-label="Второй слайд"></label>
 					</div>
-				</ul>
+				</div>
 				<div class="offers-column">
 					<div class="offers-item discount">
 						<h3 class="title">Скидки 50%</h3>
@@ -239,74 +239,73 @@
 						<li><a class="item" href="#">Кредит</a></li>
 					</ul>
 					
-						<div class="delivery-wrapper">
-							<section class="description delivery">
-								<h3>Доставка</h3>
-								<p>
-									Мы с удовольствием доставим ваш товар прямо 
-									к вашему подъезду совершенно бесплатно!<br>
-									Ведь мы неплохо заработаем,<br>
-									поднимая его на ваш этаж!
-								</p>
-							</section>
-						</div>
-						<div class="guarantee-wrapper">
-							<section class="description guarantee">
-								<h3>Гарантия</h3>
-								<p>
-									Если купленный у нас товар поломается или заискрит, 
-									а также в случае пожара, спровоцированного его возгаранием,  
-									вы всегда можете быть уверены в нашей гарантии. 
-									Мы обменяем сгоревший товар на новый.<br>
-									Дом уж восстановите как-нибудь сами. 
-								</p>
-							</section>
-						</div>
-						<div class="credit-wrapper">
-							<section class="description credit">
-								<h3>Кредит</h3>
-								<p>
-									Залезть в долговую яму стало проще! <br>
-									Кредитные консультанты придут вам на помощь.
-								</p>
-								<a class="button" href="#">Отправить заявку</a>
-							</section>
-						</div>
-					
-				</div>
-			</section>
-			<div class="container columns">
-				<section class="about-company">
-					<h2 class="title">Компания «Техномарт»</h2>
-					<p>
-						Настоящий мужской шоппинг начинается здесь! 
-						Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-					</p>
-					<p>
-						Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-						Техномарт работает со многими транспортными компаниями: 
-					</p>
-					<ul class="list">
-						<li class="item">Деловые линии</li>
-						<li class="item">Автотрейдинг</li>
-						<li class="item">ЖелДорЭкспедиция</li>
-					</ul>
-					<a href="#" class="button">Подробнее о компании</a>
-				</section>
-				<section class="address">
-					<h2 class="title">Контакты</h2>
-					<p>
-						Вы можете забрать товар сами,<br>
-						заехав в наш офис:
-					</p>
-					<div class="map">
-						<a href="#" class="link-map">
-							<img src="img/map.png" width="300" height="158" alt="Адрес офиса компании город Санкт-Петербург улица Большая Конюшенная дом 19.">
-						</a>
+					<div class="delivery-wrapper">
+						<section class="description delivery">
+							<h3>Доставка</h3>
+							<p>
+								Мы с удовольствием доставим ваш товар прямо 
+								к вашему подъезду совершенно бесплатно!<br>
+								Ведь мы неплохо заработаем,<br>
+								поднимая его на ваш этаж!
+							</p>
+						</section>
 					</div>
-					<a href="#" class="link-write-us button">Заблудились? Напишите НАМ!</a>
-				</section>
+					<div class="guarantee-wrapper">
+						<section class="description guarantee">
+							<h3>Гарантия</h3>
+							<p>
+								Если купленный у нас товар поломается или заискрит, 
+								а также в случае пожара, спровоцированного его возгаранием,  
+								вы всегда можете быть уверены в нашей гарантии. 
+								Мы обменяем сгоревший товар на новый.<br>
+								Дом уж восстановите как-нибудь сами. 
+							</p>
+						</section>
+					</div>
+					<div class="credit-wrapper">
+						<section class="description credit">
+							<h3>Кредит</h3>
+							<p>
+								Залезть в долговую яму стало проще! <br>
+								Кредитные консультанты придут вам на помощь.
+							</p>
+							<a class="button" href="#">Отправить заявку</a>
+						</section>
+					</div>					
+				</div>
 			</div>
+		</section>
+		<div class="container columns">
+			<section class="about-company">
+				<h2 class="title">Компания «Техномарт»</h2>
+				<p>
+					Настоящий мужской шоппинг начинается здесь! 
+					Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+				</p>
+				<p>
+					Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+					Техномарт работает со многими транспортными компаниями: 
+				</p>
+				<ul class="list">
+					<li class="item">Деловые линии</li>
+					<li class="item">Автотрейдинг</li>
+					<li class="item">ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="button">Подробнее о компании</a>
+			</section>
+			<section class="address">
+				<h2 class="title">Контакты</h2>
+				<p>
+					Вы можете забрать товар сами,<br>
+					заехав в наш офис:
+				</p>
+				<div class="map">
+					<a href="map.html" class="link-map">
+						<img src="img/map.png" width="300" height="158" alt="Адрес офиса компании город Санкт-Петербург улица Большая Конюшенная дом 19.">
+					</a>
+				</div>
+				<a href="write-us.html" class="link-write-us button">Заблудились? Напишите НАМ!</a>
+			</section>
 		</div>
 	</main>
 	<footer class="main-footer">
@@ -385,8 +384,27 @@
 	</section>
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Карта проезда</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6006747577262!2d30.32339540173705!3d59.93876812541997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1560416735074!5m2!1suk!2sua" width="940" height="446" style="border:0" allowfullscreen></iframe>
 		<p><img src="img/map-modul.jpg" width="940" height="446" alt="Адрес офиса компании город Санкт-Петербург улица Большая Конюшенная дом 19."></p>
 		<button class="modal-close" type="button"  aria-label="Закрыть окно">x</button> 
+	</section>
+	<section class="modal modal-order">
+		<div class="container">
+			<h2 class="visually-hidden">Оформление заказа</h2>
+			<div class="order-wrapper">
+				<div class="icon-checkbox"></div>
+				<p>Товар добавлен в корзину!</p>
+			</div>
+		</div>
+		<div class="modal-wrapper-bg">
+			<div class="container">
+				<ul class="order-list">
+					<li><a href="#" class="button button-order">Оформить заказ</a></li>
+					<li><a href="#" class="button button-cancel">Продолжить покупки</a></li>
+				</ul>
+			</div>
+		</div>
+		<button class="modal-close" type="button" aria-label="Закрыть окно">x</button>
 	</section>
 	<script src="js/script.js"></script>
 </body>
