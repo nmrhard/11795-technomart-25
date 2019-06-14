@@ -59,7 +59,6 @@ if (linkBuy) {
 }
 
 // slider
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -103,9 +102,47 @@ function showSlides(numberOfSlide) {
 		slides[i].style.display = "none";
 	}
 	for (i = 0; i < switchers.length; i++) {
-		switchers[i].className = switchers[i].className.replace(" active", "");
+		if (switchers[i].classList.contains('active')) {
+			switchers[i].classList.toggle('active');
+		}
 	}
 
-	slides[slideIndex - 1].style.display = "block";
-	switchers[slideIndex - 1].className += " active";
+	slides[slideIndex - 1].style.display = 'block';
+	switchers[slideIndex - 1].classList.add('active');
+}
+
+// services 
+var servicesIndex = 0;
+showSevices(servicesIndex);
+
+var servicesListContainer = document.querySelector('.services-list');
+servicesListContainer.addEventListener('click', function (evt) {
+	evt.preventDefault();
+	var target = evt.target || evt.srcElement;
+	for(var i = 0; i < servicesListContainer.children.length; i++) {
+		var item =  servicesListContainer.children[i];
+		if (item.children[0] == target)  {
+			serviceIndex = i;
+			showSevices(serviceIndex);
+		}
+	}
+});
+
+function showSevices(numberOfService) {
+	var servicesItem = document.querySelectorAll('.services-item');
+	var servicesSwitchers = document.querySelectorAll('.services-item-switcher');
+
+	for (i = 0; i < servicesItem.length; i++) {
+		servicesItem[i].style.display = "none";
+	}
+	for (i = 0; i < servicesSwitchers.length; i++) {
+		if (servicesSwitchers[i].classList.contains('active')) {
+			servicesSwitchers[i].classList.toggle('active');
+			servicesSwitchers[i].setAttribute('href','#');
+		}
+	}
+
+	servicesItem[numberOfService].style.display = 'block';
+	servicesSwitchers[numberOfService].classList.add('active');
+	servicesSwitchers[numberOfService].removeAttribute('href');
 }
