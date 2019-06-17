@@ -4,9 +4,13 @@ var linkWriteUs = document.querySelector('.link-write-us');
 var linkMap = document.querySelector('.link-map');
 var linkBuy = document.querySelectorAll('.buy');
 
+var modalWriteUs = document.querySelector('.modal-write-us');
+var modalMap = document.querySelector('.modal-map');
+var modalOrder = document.querySelector('.modal-order');
+
 if (linkWriteUs) {
-	var modalWriteUs = document.querySelector('.modal-write-us');
 	var closeButton = modalWriteUs.querySelector('.modal-close');
+	var userName = modalWriteUs.querySelector('[id=user-name]');
 
 	closeButton.addEventListener('click',function (evt) {
 		evt.preventDefault();
@@ -16,11 +20,11 @@ if (linkWriteUs) {
 	linkWriteUs.addEventListener('click',function (evt) {
 		evt.preventDefault();
 		modalWriteUs.classList.add('modal-show');
+		userName.focus();
 	});
 }
 
 if (linkMap) {
-	var modalMap = document.querySelector('.modal-map');
 	var closeButton = modalMap.querySelector('.modal-close');
 
 	closeButton.addEventListener('click',function (evt) {
@@ -36,7 +40,6 @@ if (linkMap) {
 }
 
 if (linkBuy) {
-	var modalOrder = document.querySelector('.modal-order');
 	var closeButton = modalOrder.querySelector('.modal-close');
 	var continueToShop = modalOrder.querySelector('.button-cancel');
 
@@ -57,6 +60,24 @@ if (linkBuy) {
 		});
 	}
 }
+
+window.addEventListener('keydown', function (evt) {
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (modalWriteUs) {
+			modalWriteUs.classList.contains('modal-show')
+			modalWriteUs.classList.remove('modal-show');
+		}
+		if (modalMap) {
+			modalMap.classList.contains('modal-show')
+			modalMap.classList.remove('modal-show');
+		}
+		if (modalOrder) {
+			modalOrder.classList.contains('modal-show')
+			modalOrder.classList.remove('modal-show');
+		}
+	}
+});
 
 // slider
 var slideIndex = 1;
